@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SWOT</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="quote">Know your knots by SWOT's</h1>
+
+    <main class="grid">
+        <section class="card">
+            <h2>Strengths</h2>
+            <textarea id="strengths" placeholder="What you are good at??"></textarea>
+        </section>
+        <section class="card">
+            <h2>Weaknesses</h2>
+            <textarea id="weaknesses" placeholder="What you are not good at??"></textarea>
+        </section>
+        <section class="card">
+            <h2>Opportunities</h2>
+            <textarea id="opportunities" placeholder="What you can do to improve??"></textarea>
+        </section>
+        <section class="card">
+            <h2>Threats</h2>
+            <textarea id="threats" placeholder="What could go wrong??"></textarea>
+        </section>
+    </main>
+    <section class="controls">
+    <label>
+        Goal:
+        <select id="goal">
+            <option value="output">Output (results now)</option>
+            <option value="improvement">Improvement (long-term growth)</option>
+        </select>
+    </label>
+
+    <label>
+        Time available:
+        <select id="time">
+            <option value="short">Short</option>
+            <option value="medium">Medium</option>
+            <option value="long">Long</option>
+        </select>
+    </label>
+
+    <label>
+        Importance:
+        <select id="importance">
+            <option value="low">Low</option>
+            <option value="medium">Medium</option>
+            <option value="high">High</option>
+        </select>
+    </label>
+
+    <button id="analyze">Analyze</button>
+</section>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
