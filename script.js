@@ -1,6 +1,5 @@
 console.log("js is connected");
 
-// 1. Find the elements on the page
 const button = document.getElementById("analyze");
 const goalDropdown = document.getElementById("goal");
 const timeDropdown = document.getElementById("time");
@@ -10,7 +9,6 @@ const weaknessesBox = document.getElementById("weaknesses");
 const opportunitiesBox = document.getElementById("opportunities");
 const threatsBox = document.getElementById("threats");
 
-// 2. The function: text in, clean list out
 function parseItems(text) {
     const lines = text.split("\n");
     const cleaned = lines.filter(function (line) {
@@ -19,7 +17,6 @@ function parseItems(text) {
     return cleaned;
 }
 
-// 3. Run this every time Analyze is clicked
 button.addEventListener("click", function () {
     console.log("Goal:", goalDropdown.value);
     console.log("Time:", timeDropdown.value);
